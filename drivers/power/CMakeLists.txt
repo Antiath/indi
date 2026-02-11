@@ -104,3 +104,11 @@ SET(svbonypowerbox_SRC
 add_executable(indi_svbony_powerbox ${svbonypowerbox_SRC})
 target_link_libraries(indi_svbony_powerbox indidriver)
 install(TARGETS indi_svbony_powerbox RUNTIME DESTINATION bin)
+
+# ########## Open Power Box Driver###############
+SET(opbdriver_SRC
+    indi_opbdriver.cpp)
+
+add_executable(indi_opbdriver ${opbdriver_SRC})
+target_link_libraries(indi_opbdriver indidriver)
+install(TARGETS indi_opbdriver RUNTIME DESTINATION bin)
