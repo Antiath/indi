@@ -1087,5 +1087,9 @@
             <driver name="SVBONY SV241 Pro">indi_svbony_powerbox</driver>
             <version>1.2</version>
         </device>
+        <device label="Open Power Box" manufacturer="DIY">
+            <driver name="Open Power Box">indi_opbdriver</driver>
+            <version>1.0</version>
+        </device>
     </devGroup>
 </driversList>
